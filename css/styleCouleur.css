@@ -1,0 +1,91 @@
+
+body.couleur #preloader:before, /* couleur animation début */
+body.couleur #preloader:after{
+    background-color: #4566A1;
+}
+body.couleur .loader_line:before{ /* couleur animation ligne */
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: white;
+    -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+    -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+    animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+
+body.couleur{ /* couleurs de base */
+	background-color: #fff7f1;
+	color: #3B3835; 
+}
+body.couleur h1,body.couleur h2,body.couleur h3,body.couleur h4,body.couleur h5,body.couleur h6{ /* couleurs des titres */
+	color: #3B3835;
+}
+body.couleur .all_wrap .leftpart{ /* couleurs du menu */
+	background-color: #4566A1;
+}
+body.couleur .all_wrap .leftpart .menu ul li a{ /* couleurs des liens du menu */
+	color: #fff;
+}
+body.couleur .all_wrap .leftpart .menu ul li a:hover{ /* couleurs des liens du menu au survol */
+	font-weight: bold;
+}
+body.couleur .all_wrap .leftpart .menu ul li.active a{ /* couleurs des liens du menu actif */
+	font-weight: bold;
+}
+
+body.couleur .all_wrap .rightpart{ /* couleurs de la partie droite */
+	background-color: #ECECEC;
+}
+body.couleur .all_wrap .rightpart_in{ /* bordure de la partie droite */
+	border-left: 3px solid #000;
+}
+
+body.couleur .cursor-inner { /* couleur du pointeur */
+  margin-left: -3px;
+  margin-top: -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 50;
+  background-color: #fff;
+  -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+  transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+}
+body.couleur .cursor-inner.cursor-hover { /* couleur du pointeur au survol */
+  margin-left: -40px;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  opacity: .3;
+}
+body.couleur .cursor-outer { /* couleur du rond du pointeur */
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 50;
+  opacity: .5;
+  -webkit-transition: all .08s ease-out;
+  transition: all .08s ease-out;
+}
+body.couleur .cursor-outer.cursor-hover{ /* couleur du rond du pointeur au survol */
+	opacity: 0;
+} 
+body.couleur .button a{ /* couleur des boutons */
+	background-color: #fff;
+	color: #000;
+}
+body.couleur .title span{ /* couleur du titre */
+	background-color: rgba(255,255,255,.04);
+	color: black;
+}
